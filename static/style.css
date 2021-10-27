@@ -1,0 +1,36 @@
+header {
+    background-color:firebrick;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("Chocolate-Cake.jpg");
+}
+
+body > div {
+    margin: 20px;
+    background-color:white;
+    opacity: 80%;
+    padding: 15px;
+}
+
+body > h2 {
+    color: firebrick;
+    margin: 20px;
+}
+
+body > div > a {
+    color:brown;
+    text-decoration: none;
+}
+
+footer {
+    background-color: firebrick;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

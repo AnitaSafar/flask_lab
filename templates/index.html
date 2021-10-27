@@ -1,14 +1,18 @@
 <html>
     <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
         <title>{{ title }} - Orders</title>
     </head>
     <body>
-        <h1>Past orders</h1>
+        <header>
+            <h1>CodeClan Cakes</h1>
+        </header>
+        <h2>Past orders</h2>
         {% for order in orders %}
         <div>
-            <a href="/orders">Click here to view order</a>
+            <a href="/orders/{{ order.order_number }}">Click here to view order</a>
             <p>
-                Customer: {{ order.customer_name }}<br>
+                Customer: <b>{{ order.customer_name }}</b><br>
                 {{ order.order_date}}<br>
                 {{ order.item }}<br>
                 Qt: {{ order.quantity}}
@@ -16,4 +20,7 @@
         </div>
         {% endfor %}
     </body>
+    <footer>
+        <p>CodeClan Cakes 01316859437</p>
+    </footer>
 </html>
