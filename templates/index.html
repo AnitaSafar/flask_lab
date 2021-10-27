@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>{{ title }} - Orders</title>
+    </head>
+    <body>
+        <h1>Past orders</h1>
+        {% for order in orders %}
+        <div>
+            <a href="/orders">Click here to view order</a>
+            <p>
+                Customer: {{ order.customer_name }}<br>
+                {{ order.order_date}}<br>
+                {{ order.item }}<br>
+                Qt: {{ order.quantity}}
+            </p>
+        </div>
+        {% endfor %}
+    </body>
+</html>
